@@ -2,6 +2,7 @@
 //Created: April 29, 2025 - Last Modified: May 6, 2025
 //Sandra: File I/O, UI & Main
 //Angel: Linked List & Classes
+//Google Document of all detailed roles: https://docs.google.com/document/d/1rPUX-aEJ7NB56Tb-OtkPeiN6mJh1FOM29A1jtyxWHDQ/edit?usp=sharing
 
 #include <fstream>
 #include <sstream>
