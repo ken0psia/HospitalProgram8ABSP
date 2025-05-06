@@ -1,3 +1,8 @@
+//Sandra Pacheco & Angel Baldovinos - Program 8 (Hospital) - COMP-SCI 201R - Section 4
+//Created: April 29, 2025 - Last Modified: May 6, 2025
+//Sandra: File I/O, UI & Main
+//Angel: Linked List & Classes
+
 #include <fstream>
 #include <sstream>
 #include <string>
