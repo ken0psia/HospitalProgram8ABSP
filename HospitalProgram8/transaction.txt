@@ -1,0 +1,27 @@
+Pulmonary Clinic Patient (Regular): Yosemite Sam was added.
+Heart Clinic Patient (Regular): Bernie Sanders was added.
+Plastic Surgery Clinic Patient (Regular): Bugs Bunny was added.
+Pulmonary Clinic Patient (Regular): Johnny Depp was added.
+Pulmonary Clinic Patient (Regular): Lady Gaga was added.
+Plastic Surgery Clinic Patient (Regular): Beyonce Knowles was added.
+Heart Clinic Patient (Regular): Sean Connery was added.
+ERROR: Invalid clinic code for Lady Gaga: ERR
+Plastic Surgery Clinic Patient (Regular): Britney Spears was added.
+Heart Clinic Patient (Regular): Spongebob Squarepants was added.
+Heart Clinic Patient (Regular): Betty Boop was added.
+Pulmonary Clinic Patient (Regular): Jackie Chan was added.
+Pulmonary Clinic Patient (Regular): Mariah Carey was added.
+Pulmonary Clinic Patient (Regular): Brad Pitt was added.
+Pulmonary Clinic Patient (Regular): Will Smith was added.
+ERROR: Invalid SSN for Popeye  (ERR)
+Heart Clinic Patient (Regular): Pink Panther was added.
+Plastic Surgery Clinic Patient (Regular): Charlie Brown was added.
+Plastic Surgery Clinic Patient (Regular): Drake  was added.
+Pulmonary Clinic Patient (Regular): Ariana Grande was added.
+Heart Clinic Patient (Regular): Jennifer Lopez was added.
+Pulmonary Clinic Patient (Regular): Justin Bieber was added.
+Heart Clinic Patient (Regular): Donald Duck was added.
+Plastic Surgery Clinic Patient (Regular): Rihanna  was added.
+Pulmonary Clinic Patient (Regular): Scooby Doo was added.
+ERROR: Pulmonary Clinic full for Velma Dinkey
+ERROR: Pulmonary Clinic full for Patrick Star

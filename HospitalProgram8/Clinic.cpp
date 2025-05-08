@@ -1,5 +1,12 @@
 #include "Clinic.h"
-
+bool isDigits(const string& str) {
+	for (char c : str) {
+		if (!isdigit(c)) {
+			return false;
+		}
+	}
+	return true;
+}
 Clinic::Clinic() {
 	maxPatients = 10;
 	head = nullptr;
@@ -52,16 +59,22 @@ void Clinic::addPatient(ostream& err, int selection) {
 	//selection will indicate which clinic is being used and display name of clinic in terminal
 	//selection should be a main or global variable // caught from first user input
 	if (getLength() >= maxPatients) {
-		err << "Clinic is full. Cannot add more patients.\n";
+		cout << "Clinic is full. Cannot add more patients.\n";
 		return;
 	}
+	string ssn;
 	Node* newNode = new Node;
 	cout << "Enter Patient's First Name: ";
 	cin >> newNode->data.fname;
 	cout << "Enter Patient's Last Name: ";
 	cin >> newNode->data.lname;
 	cout << "Enter Patient's SSN: ";
-	cin >> newNode->data.ssn;
+	cin >> ssn;
+	while (!isDigits(ssn)) {
+		cout << "Invalid SSN, Please reenter valid SSN: ";
+		cin >> ssn;
+	}
+	newNode->data.ssn = stoi(ssn);
 	newNode->data.status = 'R';
 	switch (selection) {
 	case 1:
@@ -90,16 +103,22 @@ void Clinic::addCriticalPatient(ostream& err, int selection) {
 	//selection will indicate which clinic is being used and display name of clinic in terminal
 	//selection should be a main or global variable // caught from first user input
 	if (getLength() >= maxPatients) {
-		err << "Clinic is full. Cannot add more patients.\n";
+		cout << "Clinic is full. Cannot add more patients.\n";
 		return;
 	}
+	string ssn;
 	Node* newNode = new Node;
 	cout << "Enter Patient's First Name: ";
 	cin >> newNode->data.fname;
 	cout << "Enter Patient's Last Name: ";
 	cin >> newNode->data.lname;
 	cout << "Enter Patient's SSN: ";
-	cin >> newNode->data.ssn;
+	cin >> ssn;
+	while (!isDigits(ssn)) {
+		cout << "Invalid SSN, Please reenter valid SSN: ";
+		cin >> ssn;
+	}
+	newNode->data.ssn = stoi(ssn);
 	newNode->data.status = 'C';
 	switch (selection) {
 	case 1:
@@ -160,7 +179,7 @@ void Clinic::cancelPatient(int ssn) {
 	}
 
 	if (current == nullptr) {
-		cout << current->data.fname << " " << current->data.lname << " not found in the waiting room." << endl;
+		cout << ssn << " not found in the waiting room." << endl;
 		return;
 	}
 
